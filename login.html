@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Login — Lojinha :D</title>
+        <link rel="stylesheet" href="./login.css">
+        <!-- Fontawesome --><script src="https://kit.fontawesome.com/88947d534c.js" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+
+        <div class="logo">
+            <img src="./public/logo_branca.png" alt="logoBranca">
+        </div>
+
+        <div class="login">
+            <span id="tituloLogin">Acesse sua conta</span>
+            <div class="form">
+                <form action="">
+                    <input type="email" name="email" placeholder="E-mail" style="margin-bottom: 10%;">
+                    <br>
+                    <input type="password" name="senha" placeholder="Senha">
+                    <br>
+                    <button type="button" onclick="login()">Entrar</button>
+                </form>
+            </div>
+            <div class="redirecionarCadastro">
+                <span id="spanCadastro">Não tem uma conta?</span><a href="./cadastro.html">Cadastre-se!</a>
+            </div>
+        </div>
+
+        <script src="./login.js"></script>
+    </body>
+</html>
