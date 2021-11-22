@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <title>Cadastro — Lojinha :D</title>
-        <link rel="stylesheet" href="./login.css">
+        <link rel="stylesheet" href="./cadastro.css">
         <!-- Fontawesome --><script src="https://kit.fontawesome.com/88947d534c.js" crossorigin="anonymous"></script>
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,13 +11,40 @@
     </head>
     <body>
 
-        <div class="cadastro">
-            <div class="logo">
+        <div class="logo">
+            <img src="./public/logo_branca.png" alt="logo-branca">
+        </div>
 
+        <div class="card">
+            <span id="titulo">Cadastro</span>
+            <br>
+            <div class="inputs1">
+                <input type="text" name="nome" placeholder="Nome *" style="width: 700px;" required> 
+                <input type="number" name="cpf" placeholder="CPF *" style="width: 350px;" required>
             </div>
-
-            <div class="card">
-                
+            <div class="inputs2">
+                <input type="tel" name="celular" placeholder="Celular *" style="width: 400px;" required>
+                <input type="email" name="email" placeholder="E-mail *" style="width: 700px;" required>
+            </div>
+            <div class="inputs3">
+                <select name="uf" id="uf">
+                    <option value="null">UF *</option>
+                    <option value="sp">SP</option>
+                    <option value="rs">RS</option>
+                    <option value="mt">MT</option>
+                    <option value="ac">AC</option>
+                    <option value="ba">BA</option>
+                </select>
+                <input type="text" name="cidade" placeholder="Cidade *" style="width: 350px;" required>
+                <input type="text" name="endereco" placeholder="Endereço *" style="width: 500px;" required>
+            </div>
+            <div class="inputs4">
+                <input type="text" name="complemento" placeholder="Complemento" style="width: 400px;" >
+                <input type="text" name="pontoReferencia" placeholder="Ponto de Referência" style="width: 600px;">
+            </div>
+            <button type="button" onclick="cadastrar()">Cadastrar</button>
+            <div class="redirecionarLogin">
+                <span id="spanLogin">Já tem uma conta?</span><a href="./login.html">Faça Login!</a>
             </div>
         </div>
 

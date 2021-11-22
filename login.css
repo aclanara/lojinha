@@ -7,7 +7,6 @@
     --category-name: #6F6F6F;
 }
 
-
 body{
     margin: 0px;
     display: grid;
@@ -64,8 +63,6 @@ input{
 }
 
 input:focus{
-    border: none;
-    border-bottom: 3px solid #404040;
     outline: none !important;
 }
 
