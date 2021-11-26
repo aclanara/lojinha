@@ -1,0 +1,184 @@
+:root{
+    --main-color: #FFAAE0;
+    --error: #EC4D4D;
+    --text: #FFFFFF;
+    --fill-display: #F0F0F0;
+    --icon-category: #BCBCBC;
+    --carousel: #CACACA;
+    --category-name: #6F6F6F;
+}
+
+body{
+    margin: 0px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+button{
+    cursor: pointer;
+}
+
+/* Navbar */
+
+.navbar{
+    display: grid;
+    grid-template-columns: 20% auto 10%;
+    background-color: var(--main-color);
+}
+
+#logo{
+    width: 60%;
+    margin-left: 10%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    font-family: 'Balsamiq Sans', cursive;
+    color: var(--text);
+    text-decoration: none;
+}
+
+#menuHamburguer{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+}
+
+.menuHamburguer{
+    margin-left: 50%;
+    background: none;
+    border: none;
+}
+
+.menuHamburguer i{
+    color: white;
+}
+
+#avatar{
+    margin-top: 25%;
+    width: 3rem;
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Feed */
+.feed{
+    background-image: url(./images/bg_branco.png);
+    background-repeat: repeat-y;
+}
+
+.boasVindas{
+    margin: 20px auto;
+    width: 60%;
+}
+
+.boasVindasCard{
+    display: flex;
+    height: 10%;
+    border-radius: 10px;
+    background-image: url(./images/gif_home.gif);
+    align-items: center;
+}
+
+.boasVindasCard span{
+    display: inline;
+    margin: 0 auto;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    color: var(--text);
+}
+
+#displaysCateg{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    margin: 20px auto;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.displayCateg{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: var(--fill-display);
+}
+
+.displayCateg i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--icon-category);
+    font-size: 3rem;
+}
+
+#categTitulo{
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    color: var(--category-name);
+}
+
+#sessaoTitulo{
+    display: block;
+    margin: 30px auto 20px 0px;
+    width: 80%;
+    text-align: end;
+    font-size: 1.2rem;
+}
+
+#recente span{
+    margin-top: 40px !important;
+}
+
+#displaysProduto{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin: 20px auto;
+    width: 60%;
+    justify-content: space-around;
+}
+
+.displayProduto{
+    width: 200px;
+    height: 200px;
+    background-color: var(--fill-display);
+}
+
+.displayProduto img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.btnVerMais{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.verMais{
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: var(--text);
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 200;
+    font-size: 1rem;
+    box-shadow: 2px 2px var(--fill-display);
+}
+
+/* Footer */
+footer{
+    margin-top: 20px;
+    height: 5%;
+    background-color: var(--main-color);
+}
