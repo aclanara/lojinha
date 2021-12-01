@@ -4,7 +4,6 @@
     --text: #FFFFFF;
     --fill-display: #F0F0F0;
     --icon-category: #BCBCBC;
-    --carousel: #CACACA;
     --category-name: #6F6F6F;
 }
 
@@ -55,7 +54,55 @@ a{
 }
 
 .menuHamburguer i{
+    font-size: 1.2rem;
     color: white;
+}
+
+.dropdown{
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.dropdown_content{
+    display: none;
+    margin-top: -40px;
+    position: absolute;
+    top: 100%;
+    right: 20;
+    padding: 25%;
+    width: 120px;
+    height: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px var(--category-name);
+    z-index: 9999;
+    color: black;
+    text-align: center;
+}
+
+.dropdown_content span, a{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dropdown_content span{
+    margin-top: 10px;
+}
+
+.dropdown_content a{
+    display: flex;
+    padding: 5%;
+    border-top: 2.5px solid #c0bfbf;
+    color: black;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown:hover .dropdown_content{
+    display: grid;
+    grid-template-rows: auto auto auto;
 }
 
 #avatar{
@@ -218,6 +265,10 @@ a{
     justify-content: center;
 }
 
+#btnFinal{
+    margin-bottom: 20px;
+}
+
 .verMais{
     width: 150px;
     height: 45px;
@@ -352,7 +403,6 @@ input[type="checkbox"]:checked ~ .modal-background{
 
 /* Footer */
 footer{
-    margin-top: 20px;
     height: 5%;
     background-color: var(--main-color);
 }

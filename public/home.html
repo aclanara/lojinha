@@ -19,7 +19,15 @@
                 <a href="#carrinho">Carrinho</a>
             </nav>
             <div id="menuHamburguer">
-                <button class="menuHamburguer"><i class="fas fa-chevron-down"></i></button>
+                <div class="dropdown">
+                    <button class="menuHamburguer"><i class="fas fa-chevron-down"></i></button>
+
+                    <div class="dropdown_content">
+                        <span id="perfil">Perfil</span>
+                        <span id="opcoes">Opções</span>
+                        <a href="./index.html">Sair</a>
+                    </div>
+                </div>
                 <img id="avatar" src="./images/avatar.jpg">
             </div>
         </div>
@@ -287,7 +295,7 @@
                     </div>
 
                     <div class="btnVerMais">
-                        <button class="verMais">Ver Mais</button>
+                        <button class="verMais" id="btnFinal">Ver Mais</button>
                     </div>
                 </div>
 
