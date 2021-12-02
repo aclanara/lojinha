@@ -16,6 +16,10 @@ button{
     cursor: pointer;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Navbar */
 
 .navbar{
@@ -287,13 +291,11 @@ input[type="checkbox"]{
 	display:none;
 }
 
-input[type="checkbox"]:checked ~ .modal,
-input[type="checkbox"]:checked ~ .modal-background{
+input[type="checkbox"]:checked ~ .modal{
     display: block;
 }
 
-.modal{
-    display: none;	
+.modal{	
     margin: auto;
     width: 1000px;
     height: 800px;
@@ -316,19 +318,22 @@ input[type="checkbox"]:checked ~ .modal-background{
     position: fixed;
     top: 0;
     left: 0;
-    display: none;
     z-index: 9998;
 }
 
 .modalHeader{
+    display: flex;
     padding: 2%;
     height: 50px;
 }
 
-.modalHeader label{
+.modalHeader button{
     display: flex;
-    justify-content: end;
+    justify-content: end !important;
     padding: 0 15px 0 15px;
+    width: 100%;
+    border: none;
+    background-color: white;
     cursor: pointer;
     font-size: 1.5rem;
 }

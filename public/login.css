@@ -66,6 +66,10 @@ input:focus{
     outline: none !important;
 }
 
+.input-err{
+    border-bottom: 3px solid var(--error) !important;
+}
+
 button{
     margin-top: 10%;
     width: 30%;

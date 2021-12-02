@@ -44,6 +44,10 @@ select:focus{
     outline: none;
 }
 
+.hidden{
+    display: none;
+}
+
 /* Layout */
 
 .logo{
@@ -69,6 +73,16 @@ select:focus{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.input-err{
+    border-bottom: 3px solid var(--error) !important;
+}
+
+#senhasDif{
+    margin-left: 20px;
+    color: var(--error);
+    font-size: 1rem;
 }
 
 button{
