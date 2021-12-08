@@ -22,7 +22,7 @@ body{
     align-items: center;
 }
 
-img{
+.logo img{
     display: inline;
     margin: 0 auto;
 }
@@ -35,6 +35,10 @@ img{
     height: 100vh;
     background-color: #FFFFFF;
     align-items: center;
+}
+
+.login img{
+    display: none;
 }
 
 #tituloLogin, .form, .redirecionarCadastro{
@@ -96,4 +100,36 @@ a{
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color);
+}
+
+/* Responsividade */
+@media only screen and (max-width: 670px){
+    body{
+        display: block;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .login{
+        grid-template-rows: 20% 10% 50% 20%;
+    }
+
+    .login img{
+        display: block;
+        margin: 0 auto;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    input{
+        width: 70vw;
+    }
+
+    button{
+        width: 50%;
+    }
 }

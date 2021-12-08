@@ -16,54 +16,57 @@
         </div>
 
         <div class="card">
+            <img src="./images/logo_rosa.png" alt="logoRosa">
             <span id="titulo">Cadastro</span>
             <br>
             <form action="./home.html" id="formCadastro" method="post">
                 <div class="inputs1">
-                    <input type="text" name="nome" id="nome" placeholder="Nome *" style="width: 700px;" required> 
-                    <input type="number" name="cpf" id="cpf" placeholder="CPF *" style="width: 350px;" required>
+                    <div id="inputNome"><input type="text" name="nome" id="nome" placeholder="Nome *" style="width: 700px;" required> </div>
+                    <div id="inputCPF"><input type="number" name="cpf" id="cpf" placeholder="CPF *" style="width: 350px;" required></div>
                 </div>
                 <div class="inputs2">
-                    <input type="tel" name="celular" id="celular" placeholder="Celular *" style="width: 400px;" required>
-                    <input type="email" name="email" id="email" placeholder="E-mail *" style="width: 700px;" required>
+                    <div id="inputCelular"><input type="tel" name="celular" id="celular" placeholder="Celular *" style="width: 400px;" required></div>
+                    <div id="inputEmail"><input type="email" name="email" id="email" placeholder="E-mail *" style="width: 700px;" required></div>
                 </div>
                 <div class="inputs3">
-                    <select name="uf" id="uf">
-                        <option value="null">UF *</option>
-                        <option value="AC">Acre</option>
-                        <option value="AL">Alagoas</option>
-                        <option value="AP">Amapá</option>
-                        <option value="AM">Amazonas</option>
-                        <option value="BA">Bahia</option>
-                        <option value="CE">Ceará</option>
-                        <option value="DF">Distrito Federal</option>
-                        <option value="ES">Espírito Santo</option>
-                        <option value="GO">Goiás</option>
-                        <option value="MA">Maranhão</option>
-                        <option value="MT">Mato Grosso</option>
-                        <option value="MS">Mato Grosso do Sul</option>
-                        <option value="MG">Minas Gerais</option>
-                        <option value="PA">Pará</option>
-                        <option value="PB">Paraíba</option>
-                        <option value="PR">Paraná</option>
-                        <option value="PE">Pernambuco</option>
-                        <option value="PI">Piauí</option>
-                        <option value="RJ">Rio de Janeiro</option>
-                        <option value="RN">Rio Grande do Norte</option>
-                        <option value="RS">Rio Grande do Sul</option>
-                        <option value="RO">Rondônia</option>
-                        <option value="RR">Roraima</option>
-                        <option value="SC">Santa Catarina</option>
-                        <option value="SP">São Paulo</option>
-                        <option value="SE">Sergipe</option>
-                        <option value="TO">Tocantins</option>
-                    </select>
-                    <input type="text" name="cidade" id="cidade" placeholder="Cidade *" style="width: 350px;" required>
-                    <input type="text" name="endereco" id="endereco" placeholder="Endereço *" style="width: 500px;" required>
+                    <div id="dropdownUF">
+                        <select name="uf" id="uf">
+                            <option value="null">UF *</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+                    <div id="inputCidade"><input type="text" name="cidade" id="cidade" placeholder="Cidade *" style="width: 350px;" required></div>
+                    <div id="inputEndereco"><input type="text" name="endereco" id="endereco" placeholder="Endereço *" style="width: 500px;" required></div>
                 </div>
                 <div class="inputs4">
-                    <input type="password" name="senha" id="senha" placeholder="Senha *" style="width: 500px;" required>
-                    <input type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua Senha *" style="width: 500px;" required>
+                    <div id="inputSenha"><input type="password" name="senha" id="senha" placeholder="Senha *" style="width: 500px;" required></div>
+                    <div id="inputConfirmSenha"><input type="password" name="confirmSenha" id="confirmSenha" placeholder="Confirme sua Senha *" style="width: 500px;" required></div>
                     <span id="senhasDif">As senhas são diferentes.</span>
                 </div>
                 <button type="button" onclick="cadastrar()">Cadastrar</button>

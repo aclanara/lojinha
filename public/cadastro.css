@@ -9,7 +9,7 @@
 
 body{
     margin: 0px;
-    background-image: url(./public/bg_rosa.png);
+    background-image: url(./images/bg_rosa.png);
     background-color: var(--main-color);
     font-family: 'Balsamiq Sans', cursive;
     text-align: center;
@@ -64,6 +64,10 @@ select:focus{
     border-radius: 10px;
 }
 
+.card img{
+    display: none;
+}
+
 #titulo{
 
     font-size: 2rem;
@@ -107,4 +111,33 @@ a{
     text-decoration: none;
     font-weight: bold;
     color: var(--main-color);
+}
+
+/* Responsividade */
+@media only screen and (max-width: 670px){
+    body{
+        background-color: white;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .card img{
+        display: flex;
+        margin: 0 auto;
+    }
+    
+    .card{
+        display: block;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    #nome{
+        width: 60vw;
+    }
+
 }
